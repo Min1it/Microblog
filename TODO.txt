@@ -1,0 +1,2 @@
+make a macro for the error messages in the templates
+front end work?

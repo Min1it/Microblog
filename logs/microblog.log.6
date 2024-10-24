@@ -1,0 +1,127 @@
+2024-09-10 01:41:49,479 ERROR: Exception on /index [GET] [in /home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/ubuntu/microblog/app/routes.py", line 34, in index
+    return render_template('index.html', title='Home', form=form, posts=posts.items,
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/ubuntu/microblog/app/templates/index.html", line 2, in top-level template code
+    {% import "_macros.html" as macros %}
+  File "/home/ubuntu/microblog/app/templates/base.html", line 58, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/ubuntu/microblog/app/templates/index.html", line 5, in block 'content'
+    <h1>{{ _('Hi, _%(username)s!', username=current_user.username) }}</h1>
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/jinja2/utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: '_' is undefined
+2024-09-10 01:43:27,997 ERROR: Exception on /index [GET] [in /home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/ubuntu/microblog/app/routes.py", line 34, in index
+    return render_template('index.html', title='Home', form=form, posts=posts.items,
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/ubuntu/microblog/app/templates/index.html", line 2, in top-level template code
+    {% import "_macros.html" as macros %}
+  File "/home/ubuntu/microblog/app/templates/base.html", line 58, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/ubuntu/microblog/app/templates/index.html", line 5, in block 'content'
+    <h1>{{ _('Hi, _%(username)s!', username=current_user.username) }}</h1>
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/jinja2/utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: '_' is undefined
+2024-09-10 01:45:05,687 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:45]
+2024-09-10 01:45:15,044 ERROR: Exception on /index [GET] [in /home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/ubuntu/microblog/app/routes.py", line 34, in index
+    return render_template('index.html', title='Home', form=form, posts=posts.items,
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/ubuntu/microblog/app/templates/index.html", line 2, in top-level template code
+    {% import '_macros.html' as macros %}
+  File "/home/ubuntu/microblog/app/templates/base.html", line 58, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/ubuntu/microblog/app/templates/index.html", line 5, in block 'content'
+    <h1>{{ _('Hi, %(username)s!', username=current_user.username) }}</h1>
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/jinja2/utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: '_' is undefined
+2024-09-10 01:47:20,665 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:45]
+2024-09-10 01:47:23,450 ERROR: Exception on /index [GET] [in /home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/ubuntu/microblog/app/routes.py", line 34, in index
+    return render_template('index.html', title='Home', form=form, posts=posts.items,
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/ubuntu/microblog/app/templates/index.html", line 2, in top-level template code
+    {% import 'bootstrap_wtf.html' as wtf %}
+  File "/home/ubuntu/microblog/app/templates/base.html", line 58, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/ubuntu/microblog/app/templates/index.html", line 5, in block 'content'
+    <h1>{{ _('Hi, %(username)s!', username=current_user.username) }}</h1>
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/jinja2/utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: '_' is undefined
+2024-09-10 01:49:08,011 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:45]

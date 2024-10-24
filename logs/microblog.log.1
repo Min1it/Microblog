@@ -1,0 +1,93 @@
+2024-09-10 23:20:53,247 ERROR: Exception on /follow/Foxtrot [POST] [in /home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/ubuntu/microblog/app/main/routes.py", line 87, in follow
+    return redirect(url_for('main/user', username=username))
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/helpers.py", line 220, in url_for
+    return current_app.url_for(
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main/user' with values ['username']. Did you mean 'main.user' instead?
+2024-09-10 23:22:09,446 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:63]
+2024-09-10 23:23:25,952 ERROR: Exception on /follow/Foxtrot [POST] [in /home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/ubuntu/microblog/app/main/routes.py", line 87, in follow
+    return redirect(url_for('main/user', username=username))
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/helpers.py", line 220, in url_for
+    return current_app.url_for(
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main/user' with values ['username']. Did you mean 'main.user' instead?
+2024-09-10 23:25:03,287 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:63]
+2024-09-10 23:28:42,275 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:63]
+2024-09-11 00:56:48,975 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:71]
+2024-09-11 00:57:37,026 ERROR: Exception on /index [GET] [in /home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/ubuntu/microblog/app/main/routes.py", line 30, in index
+    per_page=current_app.config['POSTS_PER_PAGE'], error_out=False)
+NameError: name 'current_app' is not defined
+2024-09-11 01:03:21,763 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:71]
+2024-09-11 01:05:18,576 ERROR: Exception on /auth/reset_password_request [POST] [in /home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ubuntu/microblog/app/auth/routes.py", line 56, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/ubuntu/microblog/app/auth/email.py", line 8, in send_password_reset_email
+    sender=current_current_app.config['ADMINS'][0],
+NameError: name 'current_current_app' is not defined
+2024-09-11 01:07:08,361 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:71]
+2024-09-11 05:01:00,464 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:71]
+2024-09-11 05:02:32,102 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:71]
+2024-09-11 05:14:50,359 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:72]
+2024-09-11 07:14:27,519 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:72]
+2024-09-11 07:16:01,747 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:72]
+2024-09-11 07:41:38,058 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:72]
+2024-09-11 07:42:04,354 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:72]
+2024-09-11 07:51:57,088 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:72]
+2024-09-17 20:40:47,407 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:72]
+2024-09-18 03:31:17,996 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:72]
+2024-09-18 03:44:49,963 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:72]

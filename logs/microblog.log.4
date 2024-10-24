@@ -1,0 +1,124 @@
+2024-09-10 02:03:31,985 ERROR: Exception on /index [GET] [in /home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/ubuntu/microblog/app/routes.py", line 34, in index
+    return render_template('index.html', title='Home', form=form, posts=posts.items,
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/ubuntu/microblog/app/templates/index.html", line 2, in top-level template code
+    {% import "macros./bootstrap_wtf.html" as wtf %}
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: macros./bootstrap_wtf.html
+2024-09-10 02:03:36,744 ERROR: Exception on /index [GET] [in /home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/ubuntu/microblog/app/routes.py", line 34, in index
+    return render_template('index.html', title='Home', form=form, posts=posts.items,
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/ubuntu/microblog/app/templates/index.html", line 2, in top-level template code
+    {% import "macros./bootstrap_wtf.html" as wtf %}
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: macros./bootstrap_wtf.html
+2024-09-10 02:05:22,960 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:45]
+2024-09-10 16:36:33,938 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:47]
+2024-09-10 18:00:22,401 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:53]
+2024-09-10 18:00:39,976 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:53]
+2024-09-10 18:11:12,531 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:53]
+2024-09-10 18:32:45,207 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:55]
+2024-09-10 18:34:00,550 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:55]
+2024-09-10 19:07:33,355 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:60]
+2024-09-10 19:09:23,317 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:60]
+2024-09-10 19:09:46,640 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:60]
+2024-09-10 19:09:59,496 ERROR: Exception on / [GET] [in /home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 285, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask_login/login_manager.py", line 196, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 120, in login_url
+    base = expand_login_view(login_view)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 97, in expand_login_view
+    return url_for(login_view)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/helpers.py", line 220, in url_for
+    return current_app.url_for(
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'login'. Did you mean 'auth.login' instead?
+2024-09-10 19:16:37,386 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:60]
+2024-09-10 19:16:48,373 ERROR: Exception on / [GET] [in /home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 285, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask_login/login_manager.py", line 196, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 120, in login_url
+    base = expand_login_view(login_view)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 97, in expand_login_view
+    return url_for(login_view)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/helpers.py", line 220, in url_for
+    return current_app.url_for(
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/ubuntu/microblog/venv/lib/python3.10/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'login'. Did you mean 'auth.login' instead?
+2024-09-10 19:21:09,610 INFO: Microblog startup [in /home/ubuntu/microblog/app/__init__.py:60]
